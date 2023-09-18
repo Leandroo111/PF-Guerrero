@@ -21,10 +21,6 @@ body {
     background-color: #292929;
 }
 
-.collapse {
-    background-color: #282626;
-}
-
 .navbar {
     background-color: rgb(10, 10, 10);
     color: white;
@@ -33,18 +29,6 @@ body {
 .navbar-brand {
     color: white;
     font-family: 'Atomic Age', cursive;
-}
-
-.dropdown-menu {
-    background-color: #282626;
-}
-
-.dropdown-item {
-    color: white;
-}
-
-.dropdown-divider {
-    background-color: white;
 }
 
 .navbar-toggler {
