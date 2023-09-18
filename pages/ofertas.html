@@ -14,98 +14,112 @@
 
 <body>
     <header class="header">
-        
-        <section class="arriba">
-            <span><strong>Servicio tecnico</strong></span>
-            <span><strong>11-4444-4444</strong></span>
-        </section>
-        
-        <section class="arriba redes"> <!-- Links a las redes de la empresa -->         
-            <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-        </section>
+      
+      <nav class="navbar navbar-expand-lg"> <!-- Barra de navegacion -->
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Boton con despliegue de la navbar -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html"> <!-- Logo de la empresa y link al index -->
+            <h1>CompuShop</h1>
+        </a>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html"> <!-- Logo de la empresa y link al index -->
-                <h1>CompuShop</h1>
-            </a>
+        <form class="d-flex" role="search"> <!-- Barra de busqueda -->
+          <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+        </form>
 
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
-            </form>
-  
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                      Categorias
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Componentes de PC
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Almacenamiento</a></li>
-                                <li><a class="dropdown-item" href="#">Cooling</a></li>
-                                <li><a class="dropdown-item" href="#">Fuentes</a></li>
-                                <li><a class="dropdown-item" href="#">Gabinetes</a></li>
-                                <li><a class="dropdown-item" href="#">Microprosesadores</a></li>
-                                <li><a class="dropdown-item" href="#">Memorias RAM</a></li>
-                                <li><a class="dropdown-item" href="#">Monitores</a></li>
-                                <li><a class="dropdown-item" href="#">Motherboards</a></li>
-                                <li><a class="dropdown-item" href="#">Placas de video</a></li>
-                            </ul>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item dropdown">
-                          <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Periféricos
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">Auriculares</a></li>
-                              <li><a class="dropdown-item" href="#">Joysticks</a></li>
-                              <li><a class="dropdown-item" href="#">Microfonos</a></li>
-                              <li><a class="dropdown-item" href="#">Mouses</a></li>
-                              <li><a class="dropdown-item" href="#">Pads</a></li>
-                              <li><a class="dropdown-item" href="#">Parlantes</a></li>
-                              <li><a class="dropdown-item" href="#">Webcams</a></li>
-                              <li><a class="dropdown-item" href="#">Teclados</a></li>
-                          </ul>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item dropdown">
-                          <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Accesorios
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">Cables</a></li>
-                              <li><a class="dropdown-item" href="#">Chromecast</a></li>
-                              <li><a class="dropdown-item" href="#">Extensores de WIFI</a></li>
-                              <li><a class="dropdown-item" href="#">Wireless</a></li>
-                          </ul>
-                        </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="notebooks.html"class="enlaces">Notebooks</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pc-armadas.html"class="enlaces">PCs Armadas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="ofertas.html"class="enlaces">Ofertas</a>
-                  </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Config de los enlaces -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Categorias
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-dark">
+
+                    <li class="nav-item dropdown"> <!-- Config del menu de categorias dentro de la navbar -->
+
+                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          Componentes de PC
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Almacenamiento</a></li>
+                            <li><a class="dropdown-item" href="#">Cooling</a></li>
+                            <li><a class="dropdown-item" href="#">Fuentes</a></li>
+                            <li><a class="dropdown-item" href="#">Gabinetes</a></li>
+                            <li><a class="dropdown-item" href="#">Microprosesadores</a></li>
+                            <li><a class="dropdown-item" href="#">Memorias RAM</a></li>
+                            <li><a class="dropdown-item" href="#">Monitores</a></li>
+                            <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                            <li><a class="dropdown-item" href="#">Placas de video</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li class="nav-item dropdown"> <!-- Config del menu de perifericos dentro de la navbar -->
+
+                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Periféricos
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark">
+
+                            <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                            <li><a class="dropdown-item" href="#">Joysticks</a></li>
+                            <li><a class="dropdown-item" href="#">Microfonos</a></li>
+                            <li><a class="dropdown-item" href="#">Mouses</a></li>
+                            <li><a class="dropdown-item" href="#">Pads</a></li>
+                            <li><a class="dropdown-item" href="#">Parlantes</a></li>
+                            <li><a class="dropdown-item" href="#">Sillas</a></li>
+                            <li><a class="dropdown-item" href="#">Webcams</a></li>
+                            <li><a class="dropdown-item" href="#">Teclados</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li class="nav-item dropdown"> <!-- Config del menu de accesorios dentro de la navbar -->
+
+                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Accesorios
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Cables</a></li>
+                            <li><a class="dropdown-item" href="#">Chromecast</a></li>
+                            <li><a class="dropdown-item" href="#">Extensores de WIFI</a></li>
+                            <li><a class="dropdown-item" href="#">Wireless</a></li>
+                        </ul>
+
+                    </li>
+
                 </ul>
-              </div>
-            </div>
-          </nav>
+
+              </li>
+
+              <li class="nav-item"> <!-- Resto de links de la navbar -->
+                <a class="nav-link" href="pages/notebooks.html"class="enlaces">Notebooks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/pc-armadas.html"class="enlaces">PCs Armadas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/ofertas.html"class="enlaces">Ofertas</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section id="marcas"> <!-- Marcas -->
