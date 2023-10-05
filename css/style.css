@@ -6,37 +6,38 @@
 html {
   font-size: 62.5%;
 }
+html a { /* Enlaces */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+html body { /* Fondo de la pagina gris */
+  background-color: #292929;
+}
 
-header { /* La barra de navegacion te sigue cuando haces scroll */
+header {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-a { /* Los textos de enlace son de color negro */
-  text-decoration: none;
-  color: black;
-}
-
-body { /* Fondo de la pagina gris */
-  background-color: #292929;
 }
 
 h1:hover {
   color: white;
 }
 
-.navbar { /* Customizacion de la barra de navegacion */
+.navbar {
   background-color: rgb(10, 10, 10);
   color: white;
 }
+.navbar ul {
+  list-style-type: none;
+}
 
-.navbar-brand { /* Customizacion del nombre de la empresa */
+.navbar-brand {
   color: white;
   font-family: "Atomic Age", cursive;
 }
 
-.navbar-toggler { /* Customizacion del boton de la barra de navegacion */
+.navbar-toggler {
   background-color: #3681da;
 }
 
@@ -47,65 +48,94 @@ h1:hover {
 
 @media (min-width: 992px) { /* Barra de navegacion adaptada para +992px */
   .navbar-brand {
-    margin-left: 10vh;
+    margin-left: 10rem;
   }
   .serch-bar {
-    margin-left: 3vh;
+    margin-left: 3rem;
   }
   .nav-link {
-    margin-inline: 1vh;
-    font-size: 1.3vh;
+    margin-inline: 1rem;
+    font-size: 1.3rem;
   }
   .categorias {
-    margin-left: 3vh;
+    margin-left: 3rem;
   }
 }
 @media (min-width: 1200px) { /* Barra de navegacion adaptada para +1200px */
+  .navbar-brand {
+    margin-left: 15rem;
+  }
   .novedades {
     height: 33vh;
   }
   .nav-link {
-    font-size: 1.5vh;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1400px) { /* Barra de navegacion adaptada para +1400px */
   .serch-bar {
-    margin-left: 4vh;
-    font-size: 1.3vh;
+    margin-left: 4rem;
+    font-size: 1.3rem;
   }
   .nav-link {
-    margin-inline: 1.5vh;
+    margin-inline: 1.5rem;
   }
   .categorias {
-    margin-left: 5vh;
+    margin-left: 5rem;
   }
 }
-ul {
-  list-style-type: none;
+footer {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.card { /* Customizacion de las cards de la pagina notebooks */
-  margin-top: 20px;
+#productos {
+  margin-block: 5rem;
+  margin-inline: 10%;
+}
+#productos h2 {
+  color: #3681da;
+  font-size: 3rem;
+  margin-bottom: 4rem;
 }
 
-.card-text { /* Customizacion de las cards de la pagina notebooks */
+.card { /* Cards de los productos */
+  margin-block: 1.5rem;
+  width: 22vh !important;
+}
+
+.card-text {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: black;
+  font-size: 1.3rem;
 }
 
-.precio { /* Customizacion de las cards de la pagina notebooks */
+.precio {
   display: flex;
   justify-content: center;
   text-align: center;
   color: rgb(232, 45, 45);
-}
-
-footer { /* Customizacion de los footer de todas las paginas */
-  color: white;
   font-size: 1.3rem;
-  text-align: center;
-  padding-top: 35%;
+} /* Cards de los productos */
+@media (min-width: 992px) {
+  .card {
+    width: 25vh !important;
+  }
+  .card-text {
+    font-size: 1.5rem;
+  }
+  .precio {
+    font-size: 1.5rem;
+  }
+}
+.precio-2 { /* Tachado del precio original del producto en la pagina de ofertas */
+  color: black;
+  text-decoration-line: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */

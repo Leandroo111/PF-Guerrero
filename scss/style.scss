@@ -5,120 +5,18 @@
 
 html {
     font-size: 62.5%;
-}
 
-header {                /* La barra de navegacion te sigue cuando haces scroll */
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-a {                     /* Los textos de enlace son de color negro */
-    text-decoration: none;  
-    color: black;
-}
-
-body {                  /* Fondo de la pagina gris */
-    background-color: #292929;
-}
-
-h1:hover {
-    color: white;
-}
-
-.navbar {               /* Customizacion de la barra de navegacion */
-    background-color: rgb(10, 10, 10);
-    color: white;
-}
-
-.navbar-brand {         /* Customizacion del nombre de la empresa */
-    color: white;
-    font-family: 'Atomic Age', cursive;
-}
-
-.navbar-toggler {       /* Customizacion del boton de la barra de navegacion */
-    background-color: #3681da;
-}
-
-.nav-link {
-    color: white !important;
-    font-weight: bold;
-}
-
-@media (min-width: 992px) {     /* Barra de navegacion adaptada para +992px */
-
-    .navbar-brand {
-        margin-left: 10vh;
+    a {                     /* Enlaces */
+        text-decoration: none;  
+        color: rgb(255, 255, 255);
     }
 
-    .serch-bar {
-        margin-left: 3vh;
+    body {                  /* Fondo de la pagina gris */
+        background-color: #292929;
     }
-
-    .nav-link {
-        margin-inline: 1vh;
-        font-size: 1.3vh; 
-    }
-
-    .categorias {
-        margin-left: 3vh;
-    }
-    
 }
 
-@media (min-width: 1200px) {    /* Barra de navegacion adaptada para +1200px */
-
-    .novedades {
-        height: 33vh;
-    }
-
-    .nav-link {
-        font-size: 1.5vh; 
-    }
-
-}
-
-@media (min-width: 1400px) {    /* Barra de navegacion adaptada para +1400px */
-
-    .serch-bar {
-        margin-left: 4vh;
-        font-size: 1.3vh;
-    }
-
-    .nav-link {
-        margin-inline: 1.5vh; 
-    }
-
-    .categorias {
-        margin-left: 5vh;
-    }
-    
-}
-
-ul {
-    list-style-type: none;
-}
-
-.card {                 /* Customizacion de las cards de la pagina notebooks */
-    margin-top: 20px;
-}
-
-.card-text {            /* Customizacion de las cards de la pagina notebooks */
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.precio {               /* Customizacion de las cards de la pagina notebooks */
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: rgb(232, 45, 45);
-}
-
-footer {                
-    color: white;
-    font-size: 1.3rem;
-    text-align: center;
-    padding-top: 35%;
-}
+@import "variables";
+@import "mixins";
+@import "style-index";
+@import "style-pages";

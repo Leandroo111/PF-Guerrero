@@ -1,0 +1,48 @@
+#productos {
+    margin-block: 5rem;
+    margin-inline: 10%;
+
+    h2 {
+        color: $color-principal;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.card {                 /* Cards de los productos */
+    margin-block: 1.5rem;
+    width: 22vh !important;
+}
+
+.card-text {            
+    @include center-text-flex;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.precio {               
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(232, 45, 45);
+    font-size: 1.3rem;
+}                       /* Cards de los productos */
+
+@media (min-width: 992px) {
+    .card {
+        width: 25vh !important;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    .precio {
+        font-size: 1.5rem;
+    }
+}
+
+.precio-2 {              /* Tachado del precio original del producto en la pagina de ofertas */
+    color: black;
+    text-decoration-line: line-through;
+}                       

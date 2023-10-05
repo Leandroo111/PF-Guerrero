@@ -1,0 +1,95 @@
+header {                
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    &:hover {
+        color: white;
+    }
+}
+
+.navbar {              
+    background-color: rgb(10, 10, 10);
+    color: white;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.navbar-brand {         
+    color: white;
+    font-family: 'Atomic Age', cursive;
+}
+
+.navbar-toggler {       
+    background-color: $color-principal;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {     /* Barra de navegacion adaptada para +992px */
+
+    .navbar-brand {
+        margin-left: 10rem;
+    }
+
+    .serch-bar {
+        margin-left: 3rem;
+    }
+
+    .nav-link {
+        margin-inline: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .categorias {
+        margin-left: 3rem;
+    }
+    
+}
+
+@media (min-width: 1200px) {    /* Barra de navegacion adaptada para +1200px */
+
+    .navbar-brand {
+        margin-left: 15rem;
+    }
+
+    .novedades {
+        height: 33vh;
+    }
+
+    .nav-link {
+        font-size: 1.5rem; 
+    }
+
+}
+
+@media (min-width: 1400px) {    /* Barra de navegacion adaptada para +1400px */
+
+    .serch-bar {
+        margin-left: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        margin-inline: 1.5rem; 
+    }
+
+    .categorias {
+        margin-left: 5rem;
+    }
+    
+}
+
+footer {                
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
