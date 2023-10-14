@@ -46,12 +46,44 @@ h1:hover {
   font-weight: bold;
 }
 
+.card-index:nth-child(n+2) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .navbar-toggler {
+    font-size: 1.8rem;
+  }
+  .navbar-brand {
+    margin-inline: 1rem;
+  }
+  .serch-bar {
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+}
 @media (min-width: 992px) { /* Barra de navegacion adaptada para +992px */
+  .navbar {
+    height: 8vh;
+  }
   .navbar-brand {
     margin-left: 10rem;
   }
   .serch-bar {
     margin-left: 3rem;
+    font-size: 1.3rem;
+    width: 15rem;
   }
   .nav-link {
     margin-inline: 1rem;
@@ -66,7 +98,7 @@ h1:hover {
     margin-left: 15rem;
   }
   .novedades {
-    height: 33vh;
+    height: 35vh;
   }
   .nav-link {
     font-size: 1.5rem;
@@ -75,7 +107,6 @@ h1:hover {
 @media (min-width: 1400px) { /* Barra de navegacion adaptada para +1400px */
   .serch-bar {
     margin-left: 4rem;
-    font-size: 1.3rem;
   }
   .nav-link {
     margin-inline: 1.5rem;
@@ -86,10 +117,31 @@ h1:hover {
 }
 footer {
   color: white;
-  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+footer .derechos {
+  margin-top: 2rem;
+}
+footer .redes {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #3681da;
+  padding-block: 1rem;
+  border-radius: 1rem;
+}
+footer .redes svg {
+  margin-top: 1rem;
+  width: 3rem;
+  margin-inline: 1rem;
 }
 
 #productos {
@@ -102,7 +154,7 @@ footer {
   margin-bottom: 4rem;
 }
 
-.card { /* Cards de los productos */
+.card-pages { /* Cards de los productos */
   margin-block: 1.5rem;
   width: 22vh !important;
 }
@@ -123,7 +175,7 @@ footer {
   font-size: 1.3rem;
 } /* Cards de los productos */
 @media (min-width: 992px) {
-  .card {
+  .card-pages {
     width: 25vh !important;
   }
   .card-text {

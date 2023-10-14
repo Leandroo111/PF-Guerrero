@@ -4,7 +4,7 @@ header {
     z-index: 1;
 }
 
-h1 {
+h1 {    
     &:hover {
         color: white;
     }
@@ -32,7 +32,35 @@ h1 {
     font-weight: bold;
 }
 
+
+.card-index:nth-child(n+2) {
+        @include visually-hidden;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .navbar-toggler {       
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        margin-inline: 1rem;
+    }
+
+    .serch-bar {
+        font-size: 1.5rem;
+        width: 30rem;
+    }
+}
+
 @media (min-width: 992px) {     /* Barra de navegacion adaptada para +992px */
+
+    .navbar {              
+        height: 8vh;
+    }
 
     .navbar-brand {
         margin-left: 10rem;
@@ -40,6 +68,8 @@ h1 {
 
     .serch-bar {
         margin-left: 3rem;
+        font-size: 1.3rem;
+        width: 15rem;
     }
 
     .nav-link {
@@ -60,7 +90,7 @@ h1 {
     }
 
     .novedades {
-        height: 33vh;
+        height: 35vh;
     }
 
     .nav-link {
@@ -73,7 +103,6 @@ h1 {
 
     .serch-bar {
         margin-left: 4rem;
-        font-size: 1.3rem;
     }
 
     .nav-link {
@@ -88,8 +117,25 @@ h1 {
 
 footer {                
     color: white;
+    @include center-text-flex;
+    @include column-flex;
     font-size: 1.3rem;
-    text-align: center;
+    font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    .derechos {
+        margin-top: 2rem;
+    }
+    .redes {
+        font-size: 1.7rem;
+        @include column-flex;
+        background-color: $color-principal;
+        padding-block: 1rem;
+        border-radius: 1rem;
+        svg {
+            margin-top: 1rem;
+            width: 3rem;
+            margin-inline: 1rem;
+        }
+    }
 }

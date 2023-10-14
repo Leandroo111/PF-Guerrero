@@ -9,7 +9,7 @@
     }
 }
 
-.card {                 /* Cards de los productos */
+.card-pages {                 /* Cards de los productos */
     margin-block: 1.5rem;
     width: 22vh !important;
 }
@@ -29,7 +29,7 @@
 }                       /* Cards de los productos */
 
 @media (min-width: 992px) {
-    .card {
+    .card-pages {
         width: 25vh !important;
     }
 
