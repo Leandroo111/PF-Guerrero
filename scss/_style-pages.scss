@@ -9,7 +9,7 @@
     }
 }
 
-.card-pages {                 /* Cards de los productos */
+.card-pages {                 /* Cards de los productos --> */
     margin-block: 1.5rem;
     width: 22vh !important;
 }
@@ -26,9 +26,9 @@
     text-align: center;
     color: rgb(232, 45, 45);
     font-size: 1.3rem;
-}                       /* Cards de los productos */
+}                             /* <-- Cards de los productos */
 
-@media (min-width: 992px) {
+@media (min-width: 992px) {   /* Cards adaptadas para +992px */
     .card-pages {
         width: 25vh !important;
     }

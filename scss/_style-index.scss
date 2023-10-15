@@ -1,141 +1,94 @@
-header {                
-    position: sticky;
-    top: 0;
-    z-index: 1;
+#productos-nuevos {
+    margin-block: 6rem;
 }
 
-h1 {    
-    &:hover {
-        color: white;
-    }
+.card-index {
+    width: 24vh !important;
 }
 
-.navbar {              
-    background-color: rgb(10, 10, 10);
-    color: white;
-    ul {
-        list-style-type: none;
-    }
+.cards {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-.navbar-brand {         
-    color: white;
-    font-family: 'Atomic Age', cursive;
-}
-
-.navbar-toggler {       
-    background-color: $color-principal;
-}
-
-.nav-link {
-    color: white !important;
-    font-weight: bold;
-}
-
-
-.card-index:nth-child(n+2) {
-        @include visually-hidden;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    .navbar-toggler {       
-        font-size: 1.8rem;
-    }
-
-    .navbar-brand {
-        margin-inline: 1rem;
-    }
-
-    .serch-bar {
-        font-size: 1.5rem;
-        width: 30rem;
-    }
-}
-
-@media (min-width: 992px) {     /* Barra de navegacion adaptada para +992px */
-
-    .navbar {              
-        height: 8vh;
-    }
-
-    .navbar-brand {
-        margin-left: 10rem;
-    }
-
-    .serch-bar {
-        margin-left: 3rem;
-        font-size: 1.3rem;
-        width: 15rem;
-    }
-
-    .nav-link {
-        margin-inline: 1rem;
-        font-size: 1.3rem;
-    }
-
-    .categorias {
-        margin-left: 3rem;
-    }
-    
-}
-
-@media (min-width: 1200px) {    /* Barra de navegacion adaptada para +1200px */
-
-    .navbar-brand {
-        margin-left: 15rem;
-    }
+@media (max-width: 767px) {
 
     .novedades {
-        height: 35vh;
-    }
-
-    .nav-link {
-        font-size: 1.5rem; 
-    }
-
-}
-
-@media (min-width: 1400px) {    /* Barra de navegacion adaptada para +1400px */
-
-    .serch-bar {
-        margin-left: 4rem;
-    }
-
-    .nav-link {
-        margin-inline: 1.5rem; 
-    }
-
-    .categorias {
-        margin-left: 5rem;
-    }
-    
-}
-
-footer {                
-    color: white;
-    @include center-text-flex;
-    @include column-flex;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    .derechos {
-        margin-top: 2rem;
-    }
-    .redes {
-        font-size: 1.7rem;
-        @include column-flex;
-        background-color: $color-principal;
-        padding-block: 1rem;
-        border-radius: 1rem;
-        svg {
-            margin-top: 1rem;
-            width: 3rem;
-            margin-inline: 1rem;
+        img {
+            height: 18vh;
         }
+    }
+    .card-index {
+        &:nth-child(n+2) {
+        @include visually-hidden;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .cards {
+        @include center-item-flex;
+    }
+    .card-index {
+        margin-inline: 2.5rem !important;
+        &:nth-child(n+3) {
+        @include visually-hidden;
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+
+    .card-index {
+        &:nth-child(n+5) {
+        @include visually-hidden;
+        }
+    }
+}
+
+
+
+@media (min-width: 992px) {     /* Carusel adaptado para +992px */
+
+    .carousel-control-prev {
+        margin-left: -6rem;
+    }
+
+    .carousel-control-next {
+        margin-right: -6rem;
+    }
+}
+
+@media (min-width: 1200px) {    /* Carrusel adaptado para +1200px */
+
+    .carousel-control-prev {
+        margin-left: -8rem;
+    }
+
+    .carousel-control-next {
+        margin-right: -8rem;
+    }
+}
+
+@media (min-width: 1400px) {    /* Carrusel adaptado para +1400px */
+
+    .carousel-control-prev {
+        margin-left: -9rem;
+    }
+
+    .carousel-control-next {
+        margin-right: -9rem;
+    }
+}
+
+@media (min-width: 1600px) {    /* Carrusel adaptado para +1600px */
+
+    .carousel-control-prev {
+        margin-left: -12rem;
+    }
+
+    .carousel-control-next {
+        margin-right: -12rem;
     }
 }

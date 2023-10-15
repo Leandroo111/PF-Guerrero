@@ -1,3 +1,12 @@
+a { /* Enlaces */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+body { /* Fondo de la pagina gris */
+  background-color: #292929;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +15,15 @@
 html {
   font-size: 62.5%;
 }
-html a { /* Enlaces */
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-html body { /* Fondo de la pagina gris */
-  background-color: #292929;
+
+h1:hover {
+  color: white;
 }
 
 header {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-h1:hover {
-  color: white;
 }
 
 .navbar {
@@ -46,19 +48,7 @@ h1:hover {
   font-weight: bold;
 }
 
-.card-index:nth-child(n+2) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* Barra de navegacion adaptada para +768px */
   h1 {
     font-size: 3.5rem;
   }
@@ -91,6 +81,12 @@ h1:hover {
   }
   .categorias {
     margin-left: 3rem;
+  }
+  .carousel-control-prev {
+    margin-left: -6rem;
+  }
+  .carousel-control-next {
+    margin-right: -6rem;
   }
 }
 @media (min-width: 1200px) { /* Barra de navegacion adaptada para +1200px */
@@ -130,7 +126,7 @@ footer {
 footer .derechos {
   margin-top: 2rem;
 }
-footer .redes {
+footer .redes { /* Box de las redes sociales */
   font-size: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -144,6 +140,101 @@ footer .redes svg {
   margin-inline: 1rem;
 }
 
+#productos-nuevos {
+  margin-block: 6rem;
+}
+
+.card-index {
+  width: 24vh !important;
+}
+
+.cards {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+@media (max-width: 767px) {
+  .novedades img {
+    height: 18vh;
+  }
+  .card-index:nth-child(n+2) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-index {
+    margin-inline: 2.5rem !important;
+  }
+  .card-index:nth-child(n+3) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+}
+@media (max-width: 1439px) {
+  .card-index:nth-child(n+5) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+}
+@media (min-width: 992px) { /* Carusel adaptado para +992px */
+  .carousel-control-prev {
+    margin-left: -6rem;
+  }
+  .carousel-control-next {
+    margin-right: -6rem;
+  }
+}
+@media (min-width: 1200px) { /* Carrusel adaptado para +1200px */
+  .carousel-control-prev {
+    margin-left: -8rem;
+  }
+  .carousel-control-next {
+    margin-right: -8rem;
+  }
+}
+@media (min-width: 1400px) { /* Carrusel adaptado para +1400px */
+  .carousel-control-prev {
+    margin-left: -9rem;
+  }
+  .carousel-control-next {
+    margin-right: -9rem;
+  }
+}
+@media (min-width: 1600px) { /* Carrusel adaptado para +1600px */
+  .carousel-control-prev {
+    margin-left: -12rem;
+  }
+  .carousel-control-next {
+    margin-right: -12rem;
+  }
+}
 #productos {
   margin-block: 5rem;
   margin-inline: 10%;
@@ -154,7 +245,7 @@ footer .redes svg {
   margin-bottom: 4rem;
 }
 
-.card-pages { /* Cards de los productos */
+.card-pages { /* Cards de los productos --> */
   margin-block: 1.5rem;
   width: 22vh !important;
 }
@@ -173,8 +264,8 @@ footer .redes svg {
   text-align: center;
   color: rgb(232, 45, 45);
   font-size: 1.3rem;
-} /* Cards de los productos */
-@media (min-width: 992px) {
+} /* <-- Cards de los productos */
+@media (min-width: 992px) { /* Cards adaptadas para +992px */
   .card-pages {
     width: 25vh !important;
   }

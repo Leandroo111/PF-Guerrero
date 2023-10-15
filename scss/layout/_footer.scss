@@ -1,0 +1,24 @@
+footer {                
+    color: white;
+    @include center-text-flex;
+    @include column-flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .derechos {
+        margin-top: 2rem;
+    }
+    .redes {            /* Box de las redes sociales */
+        font-size: 1.7rem;
+        @include column-flex;
+        background-color: $color-principal;
+        padding-block: 1rem;
+        border-radius: 1rem;
+        svg {
+            margin-top: 1rem;
+            width: 3rem;
+            margin-inline: 1rem;
+        }
+    }
+}
