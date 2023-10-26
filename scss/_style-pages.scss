@@ -9,9 +9,21 @@
     }
 }
 
+.row {
+    @include center-item-flex;
+}
+
 .card-pages {                 /* Cards de los productos --> */
     margin-block: 1.5rem;
     width: 22vh !important;
+    margin-inline: 1.5rem !important;
+}
+
+@media (min-width: 768px) {   /* Cards adaptadas para tablets */
+    .card-pages {
+        margin-inline: 3rem !important;
+        margin-block: 2rem;
+    }
 }
 
 .card-text {            
@@ -28,9 +40,11 @@
     font-size: 1.3rem;
 }                             /* <-- Cards de los productos */
 
-@media (min-width: 992px) {   /* Cards adaptadas para +992px */
+@media (min-width: 992px) {   /* Cards adaptadas para Notebooks y Desktop */
     .card-pages {
         width: 25vh !important;
+        margin-inline: 1.5rem !important;
+        margin-block: 1.5rem;
     }
 
     .card-text {

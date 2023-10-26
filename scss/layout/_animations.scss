@@ -1,0 +1,10 @@
+.navbar {              
+    background-image: radial-gradient(ellipse 200rem 50rem, rgb(10, 10, 10), rgb(73, 73, 73));
+}
+
+.card-pages {
+    transition: scale 0.5s;
+    &:hover {
+        scale: (1.23);
+    }
+}

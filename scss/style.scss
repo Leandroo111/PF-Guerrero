@@ -1,15 +1,7 @@
-    a {                     /* Enlaces */
-        text-decoration: none;  
-        color: rgb(255, 255, 255);
-    }
-
-    body {                  /* Fondo de la pagina gris */
-        background-color: #292929;
-    }
-
 @import "utils/variables";
 @import "mixins";
 @import "base/reset";
+@import "layout/animations";
 @import "utils/globals";
 @import "layout/header";
 @import "layout/footer";

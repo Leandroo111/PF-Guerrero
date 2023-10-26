@@ -1,12 +1,3 @@
-a { /* Enlaces */
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-body { /* Fondo de la pagina gris */
-  background-color: #292929;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +7,28 @@ html {
   font-size: 62.5%;
 }
 
+.navbar {
+  background-image: radial-gradient(ellipse 200rem 50rem, rgb(10, 10, 10), rgb(73, 73, 73));
+}
+
+.card-pages {
+  transition: scale 0.5s;
+}
+.card-pages:hover {
+  scale: 1.23;
+}
+
 h1:hover {
   color: white;
+}
+
+a { /* Enlaces */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+body { /* Fondo de la pagina gris */
+  background-color: #292929;
 }
 
 header {
@@ -27,7 +38,6 @@ header {
 }
 
 .navbar {
-  background-color: rgb(10, 10, 10);
   color: white;
 }
 .navbar ul {
@@ -171,9 +181,9 @@ footer .redes svg {
 }
 @media (max-width: 991px) {
   .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .card-index {
     margin-inline: 2.5rem !important;
@@ -245,11 +255,24 @@ footer .redes svg {
   margin-bottom: 4rem;
 }
 
+.row {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 .card-pages { /* Cards de los productos --> */
   margin-block: 1.5rem;
   width: 22vh !important;
+  margin-inline: 1.5rem !important;
 }
 
+@media (min-width: 768px) { /* Cards adaptadas para tablets */
+  .card-pages {
+    margin-inline: 3rem !important;
+    margin-block: 2rem;
+  }
+}
 .card-text {
   display: flex;
   justify-content: center;
@@ -265,9 +288,11 @@ footer .redes svg {
   color: rgb(232, 45, 45);
   font-size: 1.3rem;
 } /* <-- Cards de los productos */
-@media (min-width: 992px) { /* Cards adaptadas para +992px */
+@media (min-width: 992px) { /* Cards adaptadas para Notebooks y Desktop */
   .card-pages {
     width: 25vh !important;
+    margin-inline: 1.5rem !important;
+    margin-block: 1.5rem;
   }
   .card-text {
     font-size: 1.5rem;
