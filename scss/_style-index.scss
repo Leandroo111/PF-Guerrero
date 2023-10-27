@@ -1,5 +1,14 @@
 #productos-nuevos {
-    margin-block: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    h2 {
+        @include center-text-flex;
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
 }
 
 .card-index {

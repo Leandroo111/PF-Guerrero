@@ -87,10 +87,14 @@ header {
   }
   .nav-link {
     margin-inline: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .categorias {
     margin-left: 3rem;
+  }
+  .dropdown-menu {
+    width: 40rem;
+    font-size: 1.3rem;
   }
   .carousel-control-prev {
     margin-left: -6rem;
@@ -109,6 +113,9 @@ header {
   .nav-link {
     font-size: 1.5rem;
   }
+  .dropdown-menu {
+    width: 41rem;
+  }
 }
 @media (min-width: 1400px) { /* Barra de navegacion adaptada para +1400px */
   .serch-bar {
@@ -119,6 +126,9 @@ header {
   }
   .categorias {
     margin-left: 5rem;
+  }
+  .dropdown-menu {
+    width: 44rem;
   }
 }
 footer {
@@ -151,7 +161,18 @@ footer .redes svg {
 }
 
 #productos-nuevos {
-  margin-block: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+#productos-nuevos h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #3681da;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .card-index {
@@ -251,6 +272,7 @@ footer .redes svg {
 }
 #productos h2 {
   color: #3681da;
+  font-weight: bold;
   font-size: 3rem;
   margin-bottom: 4rem;
 }
@@ -262,9 +284,9 @@ footer .redes svg {
 }
 
 .card-pages { /* Cards de los productos --> */
-  margin-block: 1.5rem;
   width: 22vh !important;
   margin-inline: 1.5rem !important;
+  margin-block: 2rem;
 }
 
 @media (min-width: 768px) { /* Cards adaptadas para tablets */
@@ -292,7 +314,7 @@ footer .redes svg {
   .card-pages {
     width: 25vh !important;
     margin-inline: 1.5rem !important;
-    margin-block: 1.5rem;
+    margin-block: 2rem;
   }
   .card-text {
     font-size: 1.5rem;
